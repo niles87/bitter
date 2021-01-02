@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct SearchView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            Color("lightgray").ignoresSafeArea()
+            VStack {
+                TitleBar()
+                SearchField(search: "")
+                Spacer()
+                ButtonView()
+            }
+        }
     }
 }
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView()
+    }
+}
+
+
+struct SearchField: View {
+    
+    @State var search: String
+    
+    var body: some View {
+        TextField("Search", text: $search)
     }
 }
