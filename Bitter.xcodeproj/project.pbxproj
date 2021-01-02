@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B559AC925A0F3AA003B1A3F /* CreateBiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B559AC825A0F3AA003B1A3F /* CreateBiteView.swift */; };
+		0B559ACF25A0FB53003B1A3F /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B559ACE25A0FB53003B1A3F /* ViewLayout.swift */; };
+		0B559AD325A104D4003B1A3F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B559AD225A104D4003B1A3F /* SearchView.swift */; };
+		0B559AD625A10567003B1A3F /* BiteLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B559AD525A10567003B1A3F /* BiteLayout.swift */; };
 		0BC03BC5259FF62D00C433D7 /* BitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC03BC4259FF62D00C433D7 /* BitterApp.swift */; };
 		0BC03BC7259FF62D00C433D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC03BC6259FF62D00C433D7 /* ContentView.swift */; };
 		0BC03BC9259FF63100C433D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC03BC8259FF63100C433D7 /* Assets.xcassets */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B559AC825A0F3AA003B1A3F /* CreateBiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBiteView.swift; sourceTree = "<group>"; };
+		0B559ACE25A0FB53003B1A3F /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
+		0B559AD225A104D4003B1A3F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0B559AD525A10567003B1A3F /* BiteLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteLayout.swift; sourceTree = "<group>"; };
 		0BC03BC1259FF62D00C433D7 /* Bitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC03BC4259FF62D00C433D7 /* BitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitterApp.swift; sourceTree = "<group>"; };
 		0BC03BC6259FF62D00C433D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 				0BC03BC8259FF63100C433D7 /* Assets.xcassets */,
 				0BC03BCD259FF63100C433D7 /* Info.plist */,
 				0BC03BCA259FF63100C433D7 /* Preview Content */,
+				0B559AC825A0F3AA003B1A3F /* CreateBiteView.swift */,
+				0B559ACE25A0FB53003B1A3F /* ViewLayout.swift */,
+				0B559AD225A104D4003B1A3F /* SearchView.swift */,
+				0B559AD525A10567003B1A3F /* BiteLayout.swift */,
 			);
 			path = Bitter;
 			sourceTree = "<group>";
@@ -82,7 +94,6 @@
 				DEF7E7E8D7893DE9BAB9B6B0 /* Pods-Bitter.debug.xcconfig */,
 				0F1B16C040DCCC934500F67D /* Pods-Bitter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,7 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B559AD325A104D4003B1A3F /* SearchView.swift in Sources */,
+				0B559AD625A10567003B1A3F /* BiteLayout.swift in Sources */,
+				0B559ACF25A0FB53003B1A3F /* ViewLayout.swift in Sources */,
 				0BC03BC7259FF62D00C433D7 /* ContentView.swift in Sources */,
+				0B559AC925A0F3AA003B1A3F /* CreateBiteView.swift in Sources */,
 				0BC03BC5259FF62D00C433D7 /* BitterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
