@@ -1,5 +1,5 @@
 //
-//  bitter-layout.swift
+//  BitterLayout.swift
 //  bitter_ios
 //
 //  Created by Niles Bingham on 2/14/21.
@@ -36,24 +36,36 @@ struct ButtonView: View {
             Button(action: {
                 print("home button pressed")
             }, label: {
-                Image(systemName: "house").resizable().frame(width: 30, height: 30)
-            }).frame(width: UIScreen.main.bounds.width / 3, height: 50).background(Color("button"))
-                .foregroundColor(.white)
-                .cornerRadius(5)
+                Image(systemName: "house")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+            }).frame(width: UIScreen.main.bounds.width / 3, height: 50)
+            .background(Color("button"))
+            .foregroundColor(Color("background"))
+            .cornerRadius(5)
             
             Button(action: {
                 print("Create Bite")
             }, label: {
-                Image(systemName: "plus.circle.fill").resizable().aspectRatio(contentMode: .fit)
-            }).frame(width: 50, height: 50).cornerRadius(50).foregroundColor(Color("button"))
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }).frame(width: 50, height: 50)
+            .background(Color("background"))
+            .cornerRadius(50)
+            .foregroundColor(Color("button"))
             
             Button(action: {
                 print("search button pressed")
             }, label: {
-                Image(systemName: "magnifyingglass").resizable().frame(width: 30, height: 30)
-            }).frame(width: UIScreen.main.bounds.width / 3, height: 50).background(Color("button"))
-            .cornerRadius(5).foregroundColor(.white)
-        }.border(Color("button"), width: 2)
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+            }).frame(width: UIScreen.main.bounds.width / 3, height: 50)
+            .background(Color("button"))
+            .cornerRadius(5)
+            .foregroundColor(Color("background"))
+        }
     }
 }
 
