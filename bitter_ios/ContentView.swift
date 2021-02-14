@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            Color("lightgray").ignoresSafeArea()
+            Color("background").ignoresSafeArea()
             
             VStack {
                 TitleBar()
@@ -26,9 +26,7 @@ struct ContentView: View {
                         Text("Username").font(.system(size: 18.0, weight: .medium)).padding(.leading)
                     }
                     
-                    VStack {
-                        Text("This is the first Bite ever!!!!!").padding()
-                    }
+                    Text("This is the first Bite ever!!!!!").padding()
                 }
                 Spacer()
                 ButtonView()
