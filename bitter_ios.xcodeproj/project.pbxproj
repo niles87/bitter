@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B32341E25DA2B8500776685 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B32341D25DA2B8500776685 /* APIData.swift */; };
 		0B8B3A5925D9A65A00A8B4B5 /* bitter_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A5825D9A65A00A8B4B5 /* bitter_iosApp.swift */; };
 		0B8B3A5B25D9A65A00A8B4B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A5A25D9A65A00A8B4B5 /* ContentView.swift */; };
 		0B8B3A5D25D9A65C00A8B4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8B3A5C25D9A65C00A8B4B5 /* Assets.xcassets */; };
 		0B8B3A6025D9A65C00A8B4B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8B3A5F25D9A65C00A8B4B5 /* Preview Assets.xcassets */; };
-		0B8B3A6F25D9A81200A8B4B5 /* CreateBiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A6E25D9A81200A8B4B5 /* CreateBiteView.swift */; };
-		0B8B3A7425D9A9C800A8B4B5 /* BiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A7325D9A9C800A8B4B5 /* BiteView.swift */; };
+		0B8B3A6F25D9A81200A8B4B5 /* CreateBitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A6E25D9A81200A8B4B5 /* CreateBitView.swift */; };
+		0B8B3A7425D9A9C800A8B4B5 /* BitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A7325D9A9C800A8B4B5 /* BitView.swift */; };
 		0B8B3A7925D9AC8A00A8B4B5 /* BitterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A7825D9AC8A00A8B4B5 /* BitterLayout.swift */; };
 		0B8B3A7D25D9AD5200A8B4B5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B3A7C25D9AD5200A8B4B5 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B32341D25DA2B8500776685 /* APIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
 		0B8B3A5525D9A65A00A8B4B5 /* bitter_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitter_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8B3A5825D9A65A00A8B4B5 /* bitter_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitter_iosApp.swift; sourceTree = "<group>"; };
 		0B8B3A5A25D9A65A00A8B4B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B8B3A5C25D9A65C00A8B4B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B8B3A5F25D9A65C00A8B4B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B8B3A6125D9A65C00A8B4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B8B3A6E25D9A81200A8B4B5 /* CreateBiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBiteView.swift; sourceTree = "<group>"; };
-		0B8B3A7325D9A9C800A8B4B5 /* BiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteView.swift; sourceTree = "<group>"; };
+		0B8B3A6E25D9A81200A8B4B5 /* CreateBitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBitView.swift; sourceTree = "<group>"; };
+		0B8B3A7325D9A9C800A8B4B5 /* BitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitView.swift; sourceTree = "<group>"; };
 		0B8B3A7825D9AC8A00A8B4B5 /* BitterLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitterLayout.swift; sourceTree = "<group>"; };
 		0B8B3A7C25D9AD5200A8B4B5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,10 +67,11 @@
 				0B8B3A5C25D9A65C00A8B4B5 /* Assets.xcassets */,
 				0B8B3A6125D9A65C00A8B4B5 /* Info.plist */,
 				0B8B3A5E25D9A65C00A8B4B5 /* Preview Content */,
-				0B8B3A6E25D9A81200A8B4B5 /* CreateBiteView.swift */,
-				0B8B3A7325D9A9C800A8B4B5 /* BiteView.swift */,
+				0B8B3A6E25D9A81200A8B4B5 /* CreateBitView.swift */,
+				0B8B3A7325D9A9C800A8B4B5 /* BitView.swift */,
 				0B8B3A7825D9AC8A00A8B4B5 /* BitterLayout.swift */,
 				0B8B3A7C25D9AD5200A8B4B5 /* SearchView.swift */,
+				0B32341D25DA2B8500776685 /* APIData.swift */,
 			);
 			path = bitter_ios;
 			sourceTree = "<group>";
@@ -150,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B8B3A6F25D9A81200A8B4B5 /* CreateBiteView.swift in Sources */,
-				0B8B3A7425D9A9C800A8B4B5 /* BiteView.swift in Sources */,
+				0B8B3A6F25D9A81200A8B4B5 /* CreateBitView.swift in Sources */,
+				0B32341E25DA2B8500776685 /* APIData.swift in Sources */,
+				0B8B3A7425D9A9C800A8B4B5 /* BitView.swift in Sources */,
 				0B8B3A5B25D9A65A00A8B4B5 /* ContentView.swift in Sources */,
 				0B8B3A5925D9A65A00A8B4B5 /* bitter_iosApp.swift in Sources */,
 				0B8B3A7D25D9AD5200A8B4B5 /* SearchView.swift in Sources */,
