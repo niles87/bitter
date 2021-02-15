@@ -1,5 +1,5 @@
 //
-//  CreateBiteView.swift
+//  CreateBitView.swift
 //  bitter_ios
 //
 //  Created by Niles Bingham on 2/14/21.
@@ -14,25 +14,25 @@ struct CreateBitView: View {
         VStack {
             TitleBar()
             Spacer()
-            InputBite()
+            InputBit()
             Spacer()
         }
     }
 }
 
-struct InputBite: View {
-    @State var biteEntry: String = "Enter a new bite!"
+struct InputBit: View {
+    @State var biteEntry: String = "Enter a new bit!"
     
     var body: some View {
         VStack {
-            Text("New Bite").padding()
+            Text("New Bit").padding()
                 .font(.system(size: 20.0, weight: .semibold))
                 .foregroundColor(Color("username"))
             TextEditor(text: $biteEntry)
             HStack {
                 Spacer()
                 Button(action: {
-                    print("add new bite")
+                    print("add new bit")
                 }, label: {
                     Text("Submit").foregroundColor(.white)
                 }).frame(width: 75, height: 40)

@@ -12,28 +12,25 @@ struct ContentView: View {
         
         ZStack {
             Color("background").ignoresSafeArea()
-            
-            VStack {
-                TitleBar()
+            TabView {
+                Home()
+                    .tabItem {
+                    Label("Home", systemImage: "house")
                     
-                VStack { // BiteView will go here once DB is connected
-                    
-                    HStack {
-                        Image(systemName: "person.circle").resizable().frame(width: 40, height: 40)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.trailing)
-                        
-                        Text("Username").font(.system(size: 18.0, weight: .medium)).padding(.leading)
-                    }
-                    
-                    Text("This is the first Bite ever!!!!!").padding()
                 }
-                Spacer()
-                ButtonView()
+                CreateBitView()
+                    .tabItem {
+                    Label("", systemImage: "plus.circle.fill")
+                }
+                SearchView()
+                    .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
             }
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

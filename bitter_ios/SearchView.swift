@@ -11,16 +11,13 @@ struct SearchView: View {
     
     var body: some View {
         
-        ZStack {
-            Color("lightgray").ignoresSafeArea()
-            VStack {
-                TitleBar()
-                SearchField(search: "")
-                Spacer()
-                ButtonView()
-            }
+        VStack {
+            TitleBar()
+            SearchField(search: "")
+            Spacer()
         }
     }
+    
 }
 
 struct SearchField: View {
@@ -28,6 +25,12 @@ struct SearchField: View {
     @State var search: String
     
     var body: some View {
-        TextField("Search", text: $search)
+        HStack{
+            TextField("Search", text: $search)
+                .padding()
+            Button(action: {}, label: {
+                Text("Search")
+            })
+        }
     }
 }
