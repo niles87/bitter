@@ -8,17 +8,14 @@
 
 import SwiftUI
 
-struct CreateBiteView: View {
+struct CreateBitView: View {
     var body: some View {
-        ZStack {
-            Color("lightgray").ignoresSafeArea()
-            VStack {
-                TitleBar()
-                
-                InputBite()
-                Spacer()
-                ButtonView()
-            }
+        
+        VStack {
+            TitleBar()
+            Spacer()
+            InputBite()
+            Spacer()
         }
     }
 }
@@ -45,7 +42,7 @@ struct InputBite: View {
             }
             
         }.frame(width: UIScreen.main.bounds.width - 30, height: 300)
-        .border(Color.secondary, width: 3)
+        .border(Color.secondary, width: 1)
         .cornerRadius(5.0)
     }
 }

@@ -7,7 +7,19 @@
 
 import SwiftUI
 
-struct BiteView: View {
+struct Home: View {
+    private let column: [GridItem] = Array(repeating: .init(), count: 1)
+    var body: some View {
+        ScrollView {
+            TitleBar()
+            LazyVGrid(columns: column) {
+                
+            }
+        }
+    }
+}
+
+struct BitView: View {
     
     var userImage: String
     var userName: String
