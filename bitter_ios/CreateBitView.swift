@@ -21,14 +21,14 @@ struct CreateBitView: View {
 }
 
 struct InputBit: View {
-    @State var biteEntry: String = "Enter a new bit!"
+    @State var bitEntry: String = "Enter a new bit!"
     
     var body: some View {
         VStack {
             Text("New Bit").padding()
                 .font(.system(size: 20.0, weight: .semibold))
                 .foregroundColor(Color("username"))
-            TextEditor(text: $biteEntry)
+            TextEditor(text: $bitEntry)
             HStack {
                 Spacer()
                 Button(action: {

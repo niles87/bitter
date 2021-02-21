@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Home: View {
     private let column: [GridItem] = Array(repeating: .init(), count: 1)
+    let bits = API.main.getBits()
     var body: some View {
         ScrollView {
             TitleBar()
@@ -20,10 +21,7 @@ struct Home: View {
 }
 
 struct BitView: View {
-    
-    var userImage: String
-    var userName: String
-    var bite: String
+    let bit: Bit
     
     var body: some View {
         VStack {
@@ -38,8 +36,9 @@ struct BitView: View {
             }
             
             VStack {
-                Text(bite).padding()
+                Text(bit.bit).padding()
             }
+            
         }
     }
 }

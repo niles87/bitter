@@ -7,38 +7,33 @@
 
 import Foundation
 
-struct Bit {
-    var timestamp: Int32
-    var username: String
-    var bit: String
+struct BitList: Codable {
+    let data: [Bit]
 }
 
-struct Bits {
-    var id: [Bit]
+struct Bit: Codable {
+    let _id: String
+    let author: String
+    let bit: String
+    let date_time: Date
+    let comments: [Comments]
 }
 
-struct Comment {
-    var comment: String
-    var timestamp: Int32
-    var username: String
+struct Comments: Codable {
+    let comment: String
+    let date_time: Date
+    let author: String
 }
 
-struct Post {
-    var id: [Comment]
+struct User: Codable {
+    let name: String
+    let _id: String?
+    let email: String
+    let image: String
+    let password: String?
+    let username: String
 }
 
-struct Comments {
-    var id: [Post]
-}
-
-struct Username {
-    var name: String
-    var id: String
-    var email: String
-    var image: String
-    var password: String?
-}
-
-struct Users {
-    var username: [Username]
+struct Users: Codable {
+    let data: [User]
 }
