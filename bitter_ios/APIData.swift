@@ -14,6 +14,7 @@ struct BitList: Codable {
 struct Bit: Codable {
     let _id: String
     let author: String
+    let author_image: String
     let bit: String
     let date_time: Date
     let comments: [Comments]
@@ -23,6 +24,7 @@ struct Comments: Codable {
     let comment: String
     let date_time: Date
     let author: String
+    let author_image: String
 }
 
 struct User: Codable {
