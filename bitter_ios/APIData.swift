@@ -39,3 +39,7 @@ struct User: Codable {
 struct Users: Codable {
     let data: [User]
 }
+
+struct Message: Codable {
+    let msg: String
+}
